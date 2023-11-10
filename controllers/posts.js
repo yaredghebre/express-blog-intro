@@ -11,7 +11,9 @@ const index = (req, res) => {
 
       for (const post of feed) {
         htmlPosts.push(`<li>
-        <h3>${post.titolo}</h3>`);
+        <h3>${post.titolo}</h3>
+        <img src="/img/posts/${post.immagine}"
+        </li>`);
       }
       htmlPosts.push("</ul>");
 

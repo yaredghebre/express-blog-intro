@@ -13,6 +13,9 @@ let port = +process.env.PORT || 3001;
 // Definisco istanza di express.js
 const app = express();
 
+// Configuro asset statico
+app.use(express.static("public"));
+
 // Definisco la prima rotta
 app.get("/posts", postsController.index);
 
