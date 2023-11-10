@@ -22,6 +22,8 @@ const index = (req, res) => {
       const htmlPosts = [
         "<h1>Feed</h1>",
         "<ul>",
+
+        // spred operator dell'array nel json
         ...feed.map(
           (post) => `<li>
             <h3>${post.titolo}</h3>

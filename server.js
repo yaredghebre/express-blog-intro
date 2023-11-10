@@ -2,6 +2,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 
+const homeController = require("./controllers/home");
+
 // Importo i posts.js
 const postsController = require("./controllers/posts");
 
@@ -16,8 +18,11 @@ const app = express();
 // Configuro asset statico
 app.use(express.static("public"));
 
-// Definisco la prima rotta
-app.get("/", postsController.index);
+// Rotta della home
+app.get("/", homeController.postIndex);
+
+// Definisco la rotta dei posts
+app.get("/posts", postsController.index);
 
 // Avvio il server
 app.listen(port, () => {
