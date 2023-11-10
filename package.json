@@ -1,0 +1,33 @@
+{
+  "name": "express-blog-intro",
+  "version": "1.0.0",
+  "description": "First project with express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaredghebre/express-blog-intro.git"
+  },
+  "keywords": [
+    "express.js",
+    "node",
+    "nodemon",
+    "dotenv"
+  ],
+  "author": "Yared Ghebre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaredghebre/express-blog-intro/issues"
+  },
+  "homepage": "https://github.com/yaredghebre/express-blog-intro#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
