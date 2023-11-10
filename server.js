@@ -17,7 +17,7 @@ const app = express();
 app.use(express.static("public"));
 
 // Definisco la prima rotta
-app.get("/posts", postsController.index);
+app.get("/", postsController.index);
 
 // Avvio il server
 app.listen(port, () => {
